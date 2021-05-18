@@ -17,7 +17,9 @@ var polygon;
 
 var slingshot;
 
-var backgroundImage;
+var backgroundImage
+
+
 
 var scoregame = 0;
 
@@ -86,15 +88,22 @@ function setup() {
 }
 
 function draw() {
-  if(backgroundImage) 
+  
+  if(backgroundImage)
   background(backgroundImage);
+
+  else  { background(255) }
+
+
+  
+
 
   textSize(35);
   fill("blue")
   //fill(100,168,21);
   text("Score:"+ scoregame,width-300,50)
 
-console.log(scoregame)
+  console.log(scoregame)
 
   Engine.update(engine);  
 
